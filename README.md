@@ -35,12 +35,13 @@ I build my own language models as edge nodes of the A.I.D.A. ecosystem. Each mod
 | [**A.I.D.A.**](https://github.com/vahidzekic/A.I.D.A.) | *Artificially Intelligent Deterministic Agent*: a neuro-symbolic agentic AI framework that combines deep learning with deterministic symbolic logic, built from scratch. Also the basis of a healthcare robot assistant.<br>🌐 [aida.in.rs](https://aida.in.rs) · 💬 [Chat with A.I.D.A.](https://chat.aida.in.rs) |
 | [**Ouroboros AI Lab**](https://github.com/vahidzekic/Ouroboros-AI-Lab) | AI infrastructure on a GPU cluster with 288 GB of VRAM, plus a custom Python WebSocket relay that distributes local Ollama inference across networks. |
 
-## 🕰️ The A.I.D.A. journey: 2015 → 2026
+## 🕰️ The A.I.D.A. journey: 2010 → 2026
 
-A.I.D.A. started as my bachelor's thesis and has been my long-running research platform ever since. Each generation builds on the previous one. The full story is on [**aida.in.rs**](https://aida.in.rs), and you can talk to it at [**chat.aida.in.rs**](https://chat.aida.in.rs).
+A.I.D.A. started in 2010 as a simple Linux script. I kept adding to it, and by 2015 it had grown into my bachelor's thesis. It has been my long-running research platform ever since. Each generation builds on the previous one. The full story is on [**aida.in.rs**](https://aida.in.rs), and you can talk to it at [**chat.aida.in.rs**](https://chat.aida.in.rs).
 
 | Year | Milestone |
 |---|---|
+| **2010** | **The beginning**: a simple Linux assistant script, extended feature by feature over the next five years. |
 | **2015** | **Distributed rover cluster** (B.Sc. thesis): four networked Raspberry Pis. C++ camera nodes do stereo triangulation over raw TCP sockets and send 8 bytes per detection instead of whole frames. A Python master and motor node handle navigation. |
 | **2017–2019** | **Face recognition system** (M.Sc. research): a web app with face detection, recognition and tracking, facial expression analysis (CNN), plus speech, vehicle and patient recognition. |
 | **2019** | **A.I.D.A. CUDA Core**: YOLOv3 object detection with CUDA, multi-camera surveillance with up to 9 streams, automatic GPU/CPU switching, and Jetson Nano support. Also available as a Docker image. |
