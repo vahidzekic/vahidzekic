@@ -65,6 +65,13 @@ I apply ML to crypto markets and treat it as a scientific experiment, not a get-
 - **Futures scalper**: a long/short signal engine for BTC/USDT that combines 9 weighted indicators with an XGBoost + Random Forest ensemble, plus strict risk and liquidation limits.
 - **Market data aggregator**: an async pipeline that pulls macro, prediction-market, news and market data at the same time and turns it into model-ready features.
 
+## ⚙️ Systems programming & infrastructure
+
+- **Forensic data recovery**: a 9-layer recovery pipeline for corrupted JPEG and MP4 files from failing drives. Five CPU layers do header patching, binary carving and bitstream repair. Four optional GPU layers use CUDA to brute-force Huffman tables, a small transformer to predict missing marker bytes, a U-Net to rebuild damaged image areas, and bit-shift scanning to realign the data. Each layer only runs if the ones before it failed.
+- **VPN Relay**: tunnels TCP traffic over WebSockets through a cloud broker. Agents at each site turn any local service (Ollama, RDP, web servers) into a remote port, without opening ports on the home network.
+- **KontrolaNaDaljinu**: a cross-platform remote desktop app. The relay server is written in pure C11 (about 100 KB) and the GUI client is in C++/Qt5. It uses TLS-encrypted TCP+UDP and FFmpeg for screen streaming.
+- [**Wahacoin**](https://github.com/vahidzekic/Wahacoin): a proof-of-work cryptocurrency forked from Bitcoin Core v22 (C++, SHA-256), with its own chain parameters and a phased CPU → GPU → ASIC rollout for fair early distribution. Around it I built a REST API and block indexer (PostgreSQL), a block explorer, and web and Flutter wallets.
+
 ## 🛠️ Tech stack
 
 - **Computer vision & video:** OpenCV · FFmpeg · GStreamer · video transcoding
