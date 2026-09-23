@@ -6,6 +6,8 @@ I build and run production computer vision systems: real-time video pipelines, G
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-vahid--zekic-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vahid-zekic-181488141/)
 [![Email](https://img.shields.io/badge/Email-vahidzekic%40gmail.com-EA4335?logo=gmail&logoColor=white)](mailto:vahidzekic@gmail.com)
+[![A.I.D.A. website](https://img.shields.io/badge/A.I.D.A.-aida.in.rs-00B37E?logo=googlechrome&logoColor=white)](https://aida.in.rs)
+[![A.I.D.A. chat](https://img.shields.io/badge/Try%20A.I.D.A.-chat.aida.in.rs-7C3AED?logo=googlechat&logoColor=white)](https://chat.aida.in.rs)
 
 ---
 
@@ -30,12 +32,12 @@ I build my own language models as edge nodes of the A.I.D.A. ecosystem. Each mod
 
 | Project | Description |
 |---|---|
-| [**A.I.D.A.**](https://github.com/vahidzekic/A.I.D.A.) | *Artificially Intelligent Deterministic Agent*: a neuro-symbolic agentic AI framework that combines deep learning with deterministic symbolic logic, built from scratch. Also the basis of a healthcare robot assistant. |
+| [**A.I.D.A.**](https://github.com/vahidzekic/A.I.D.A.) | *Artificially Intelligent Deterministic Agent*: a neuro-symbolic agentic AI framework that combines deep learning with deterministic symbolic logic, built from scratch. Also the basis of a healthcare robot assistant.<br>🌐 [aida.in.rs](https://aida.in.rs) · 💬 [Chat with A.I.D.A.](https://chat.aida.in.rs) |
 | [**Ouroboros AI Lab**](https://github.com/vahidzekic/Ouroboros-AI-Lab) | AI infrastructure on a GPU cluster with 288 GB of VRAM, plus a custom Python WebSocket relay that distributes local Ollama inference across networks. |
 
 ## 🕰️ The A.I.D.A. journey: 2015 → 2026
 
-A.I.D.A. started as my bachelor's thesis and has been my long-running research platform ever since. Each generation builds on the previous one.
+A.I.D.A. started as my bachelor's thesis and has been my long-running research platform ever since. Each generation builds on the previous one. The full story is on [**aida.in.rs**](https://aida.in.rs), and you can talk to it at [**chat.aida.in.rs**](https://chat.aida.in.rs).
 
 | Year | Milestone |
 |---|---|
