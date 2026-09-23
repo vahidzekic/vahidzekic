@@ -33,6 +33,38 @@ I build my own language models as edge nodes of the A.I.D.A. ecosystem. Each mod
 | [**A.I.D.A.**](https://github.com/vahidzekic/A.I.D.A.) | *Artificially Intelligent Deterministic Agent*: a neuro-symbolic agentic AI framework that combines deep learning with deterministic symbolic logic, built from scratch. Also the basis of a healthcare robot assistant. |
 | [**Ouroboros AI Lab**](https://github.com/vahidzekic/Ouroboros-AI-Lab) | AI infrastructure on a GPU cluster with 288 GB of VRAM, plus a custom Python WebSocket relay that distributes local Ollama inference across networks. |
 
+## 🕰️ The A.I.D.A. journey: 2015 → 2026
+
+A.I.D.A. started as my bachelor's thesis and has been my long-running research platform ever since. Each generation builds on the previous one.
+
+| Year | Milestone |
+|---|---|
+| **2015** | **Distributed rover cluster** (B.Sc. thesis): four networked Raspberry Pis. C++ camera nodes do stereo triangulation over raw TCP sockets and send 8 bytes per detection instead of whole frames. A Python master and motor node handle navigation. |
+| **2017–2019** | **Face recognition system** (M.Sc. research): a web app with face detection, recognition and tracking, facial expression analysis (CNN), plus speech, vehicle and patient recognition. |
+| **2019** | **A.I.D.A. CUDA Core**: YOLOv3 object detection with CUDA, multi-camera surveillance with up to 9 streams, automatic GPU/CPU switching, and Jetson Nano support. Also available as a Docker image. |
+| **2024** | **A.I.D.A. M1**: YOLOv8 detection and tracking ported to Apple Silicon, up to 10 IP cameras, with benchmarks. |
+| **2026** | **A.I.D.A. language model family**: custom LLMs from 17M to 17B parameters, plus the neuro-symbolic [A.I.D.A.](https://github.com/vahidzekic/A.I.D.A.) agent framework. |
+| **2026** | **A.I.D.A. Humanoid OS**: a cognitive operating system for humanoid robots. It covers stereo depth vision, speech in and out, few-shot learning of new objects, reasoning with a local LLM, memory consolidation and curiosity-driven exploration. It runs fully offline, and the whole stack fits in under 300 MB of RAM on a Jetson Nano. Editions exist for RTX/CUDA desktops and Apple Silicon. |
+
+## 📦 Products I've built
+
+| Product | What it does | Stack |
+|---|---|---|
+| **StoreFlow** | In-store analytics: tracks shoppers' paths on CCTV feeds in real time and shows live camera views with AI overlays and heatmaps. | YOLOv8 · Flask · PostgreSQL · React |
+| **eOptika** | ERP for optical stores: patients, prescriptions, frame and lens inventory, sales and finance. Includes a licensing service, auto-updates and a bridge to fiscal and thermal printers. | React · Flask · Docker |
+| **KonobarAI / RestOS** | AI restaurant platform: guests order by voice or chat from a digital menu, the kitchen gets live orders, and inventory is linked to recipes. Multi-tenant SaaS. | Flask · PostgreSQL · Socket.IO · GPT-4o · Whisper · TTS |
+| **AfterBefore** | A nightlife platform with a mobile app, web client and backend API. | Flutter · React · Flask · PostgreSQL |
+| **Work Plus** | Tracks workforce productivity on construction sites, with a mobile app, dashboard and API. | Flutter · React · Flask · PostgreSQL |
+| **eOrdinacija** | Patient management and reporting for medical practices. | Flask · JavaScript |
+
+## 📊 Quantitative research
+
+I apply ML to crypto markets and treat it as a scientific experiment, not a get-rich-quick bot.
+
+- **BTC spot trading research log**: 44 tests with a locked holdout set, predictions recorded in advance, and random-selection controls. The honest result so far: the best rule is positive but **not statistically significant** (t < 2), so it stays a research project. The production setup runs as supervised, independent processes with heartbeat monitoring, a capital kill-switch, order-book recording and Telegram control.
+- **Futures scalper**: a long/short signal engine for BTC/USDT that combines 9 weighted indicators with an XGBoost + Random Forest ensemble, plus strict risk and liquidation limits.
+- **Market data aggregator**: an async pipeline that pulls macro, prediction-market, news and market data at the same time and turns it into model-ready features.
+
 ## 🛠️ Tech stack
 
 - **Computer vision & video:** OpenCV · FFmpeg · GStreamer · video transcoding
