@@ -17,6 +17,15 @@ I build and run production computer vision systems: real-time video pipelines, G
 - **OCR and document digitization**: image-to-text pipelines for automated data extraction.
 - **Agentic AI and LLMs**: local multi-agent environments, RAG document ingestion, and Ollama-based inference.
 
+### 🧠 A.I.D.A. language model family
+
+I build my own language models as edge nodes of the A.I.D.A. ecosystem. Each model runs on local hardware and connects to a cloud gateway over a WebSocket tunnel, so inference doesn't need cloud GPUs.
+
+- **babyLLM (17.2M)**: a small domain-specific language model for pediatric and baby-care advice in Serbian, written from scratch in PyTorch. It uses a Mixture-of-Experts transformer (5 layers, 6 heads, 4 experts with top-2 routing) sized to fit the CPU's cache. Running it on the CPU instead of a Thunderbolt eGPU made inference more than 4× faster. A custom repetition penalty keeps generation from looping.
+- **abiLLM (~300M)**: a 24-layer autoregressive transformer written from scratch in **Apple MLX** for Apple Silicon. It uses unified memory without copies and JIT-compiled Metal kernels (`@mx.compile`), with its own BPE tokenizer for Serbian Latin script and a training set scraped from medical and family-health articles.
+- **zeinLLM (17.2B)**: a modular vision-language system designed to keep learning without catastrophic forgetting. It combines a frozen 4-bit quantized core, a vision RAG memory (CLIP embeddings in ChromaDB), a curiosity engine that rewards new discoveries, and a LoRA router that hot-swaps skill modules. It takes live camera and microphone input.
+- **nanoLLM (3B)**: an autonomous robot rover on an **NVIDIA Jetson Nano**. A 3B vision-language model quantized to 4-bit GGUF runs on-device through llama.cpp. It sees through a camera, hears Serbian speech, remembers places with a FAISS vector memory, and drives DC motors via GPIO using JSON motor commands. It all runs locally in 4 GB of RAM.
+
 ## 🚀 Featured projects
 
 | Project | Description |
